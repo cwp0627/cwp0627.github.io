@@ -13,6 +13,13 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .save-load {
+    display: flex;
+    text-align: center;
+    height: 30px;
+
+  }
   
   .marketing-currency, 
   .artist-currency, 

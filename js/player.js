@@ -14,7 +14,7 @@ var player = {
     mult: 1,
     amount: 0,
     bought: 0,
-    name: "Amazon Ad Campaign I"
+    name: "Amazon Ad Campaign"
   }
   
   var firstArtist = {
@@ -23,8 +23,11 @@ var player = {
     mult: 1,
     amount: 0,
     bought: 0,
-    name: "Nvidia Artist I"
+    name: "Nvidia Artist"
   }
   
   player.marketing.push(new Generator(firstMarketing))
   player.artists.push(new Generator(firstArtist))
+
+
+  

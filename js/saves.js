@@ -1,19 +1,20 @@
-
+var gameSave = {
+    player: player,
+    firstArtist: firstArtist,
+    firstMarketing: firstMarketing,
+}
 
 function saveGame() {
-    var gameSave = {
-        player: player,
-        firstArtist: firstArtist,
-        firstMarketing: firstMarketing,        
-    };
-    localStorage.setItem(SAVE_KEY, JSON.stringify(gameSave));
+    console.log() 
+    localStorage.setItem(savedGame, JSON.stringify(gameSave));
 }
 
 function loadGame() {
+    console.log() 
     var savedGame = JSON.parse(localStorage.getItem(gameSave));
-    if (typeof savedGame.player !== "undefined") player = savedGame.player;
-    if (typeof savedGame.firstArtist !== "undefined") firstArtist = savedGame.firstArtist;
-    if (typeof savedGame.firstMarketing !== "undefined") firstMarketing = savedGame.firstMarketing;
+    if (typeof saveGame.player !== "undefined") player = savedGame.player;
+    if (typeof saveGame.firstArtist !== "undefined") firstArtist = savedGame.firstArtist;
+    if (typeof saveGame.firstMarketing !== "undefined") firstMarketing = savedGame.firstMarketing;
 }
 
 window.onload = function() {
